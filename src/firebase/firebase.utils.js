@@ -3,13 +3,13 @@ import 'firebase/firebase-firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: 'AIzaSyCuaFTg0iF4p7R1fDXGnVJRTLmcIxnHLnk',
-  authDomain: 'talabat-mweb.firebaseapp.com',
-  databaseURL: 'https://talabat-mweb.firebaseio.com',
-  projectId: 'talabat-mweb',
-  storageBucket: 'talabat-mweb.appspot.com',
-  messagingSenderId: '967144306692',
-  appId: '1:967144306692:web:d1c6d23b78532654'
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_STORAGE_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 firebase.initializeApp(config);
